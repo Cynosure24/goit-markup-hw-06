@@ -817,7 +817,6 @@ header .container {
     flex-direction: row;
     flex-wrap: wrap;
     gap: 72px 24px;
-    width: 584px;
   }
 
   .logo-container {
@@ -858,6 +857,13 @@ header .container {
 .footer .footer-socials:hover,
 .footer .footer-socials:focus {
   background-color: var(--green);
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1157.98px){
+.tablet-container {
+    max-width: 584px;
+}
 }
 
 /* Subscribe Section */
