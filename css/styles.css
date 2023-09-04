@@ -62,9 +62,10 @@ textarea {
 /* Base styles */
 
 .body {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   color: var(--text-color);
   background-color: var(--whight-color);
+  font-style: normal;
 }
 
 .container {
