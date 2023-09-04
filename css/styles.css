@@ -861,68 +861,60 @@ header .container {
 
 /* Subscribe Section */
 
-.subscribe-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-}
-
 .subscribe-form {
   display: flex;
   align-items: center;
   gap: 24px;
 }
 
-@media only screen and (min-width: 428px) and (max-width: 767.98px) {
-  .subscribe-form {
-    width: 428px;
-  }
+.subscribe-form-title {
+  margin-bottom: 16px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--white);
+}
+
+.subscribe-email-form {
+  width: 100%;
 }
 
 .subscribe-email {
-  width: 100%;
+  width: 264px;
   height: 40px;
-  color: var(--white);
+  padding: 8px 16px;
+  border-radius: 4px;
+  border: 1px solid var(--white);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  background-color: transparent;
   font-size: 12px;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  background-color: transparent;
-  border-radius: 4px;
-  border: 1px solid var(--white, #fff);
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-  padding: 8px 0 8px 16px;
+  color: var(--white);
 }
 
-.subscribe-email:hover,
-.subscribe-email:focus {
-  outline: none;
-}
-
-.subscribe-section input::placeholder {
+.subscribe-email::placeholder {
   color: var(--white);
 }
 
 .subscribe-button {
   display: flex;
+  padding: 8px 24px;
   justify-content: center;
   align-items: center;
   min-width: 165px;
-  background-color: #4d5ae5;
-  color: #ffffff;
-  font-weight: 500;
-  line-height: 1.5; 
-  letter-spacing: 0.04em;
-  padding: 8px 24px;
-  margin: 0 auto;
+  height: 40px;
+  border: none;
   border-radius: 4px;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  background-color: var(--iris);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: var(--white);
   transition: background-color var(--transition-settings);
-}
-
-.subscribe-button:hover,
-.subscribe-button:focus {
-  background-color: #404bbf;
 }
 
 .subscribe-icon {
@@ -930,46 +922,32 @@ header .container {
   margin-left: 16px;
 }
 
-@media screen and (min-width: 768px) {
-  .subscribe-section {
-    align-items: flex-start;
-  }
+.subscribe-button:hover,
+.subscribe-button:focus {
+  background-color: var(--ocean);
+}
+
+@media screen and (max-width: 767.98px) {
   .subscribe-form {
-    flex-direction: row;
-    gap: 0;
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
   }
+
+  .subscribe-form-title {
+    text-align: center;
+  }
+
   .subscribe-email {
-    width: 264px;
-  }
-  .subscribe-button {
-    margin: 0;
-  }
-  .subscribe-email-form {
-    margin-right: var(--listed-gap);
-  }
-  .container-socials {
-    align-items: flex-start;
+    width: 100%;
   }
 }
 
 @media screen and (min-width: 1158px) {
-  .footer {
-    padding: 100px 0;
-  }
-
-  .footer-container {
-    align-items: baseline;
-  }
-
-  .logo-container {
-    margin-right: 120px;
-  }
-
   .subscribe-section {
     margin-left: auto;
   }
 }
-
 
 /* Modal window */
 
