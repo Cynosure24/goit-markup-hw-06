@@ -869,10 +869,9 @@ header .container {
 }
 
 .subscribe-form {
-  width: 100%;
   display: flex;
-  flex-direction: column;
-  gap: var(--listed-gap);
+  align-items: center;
+  gap: 24px;
 }
 
 @media only screen and (min-width: 428px) and (max-width: 767.98px) {
@@ -964,6 +963,10 @@ header .container {
 
   .logo-container {
     margin-right: 120px;
+  }
+
+  .subscribe-section {
+    margin-left: auto;
   }
 }
 
