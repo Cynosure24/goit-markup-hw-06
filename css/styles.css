@@ -6,9 +6,7 @@
 }
 
 :root {
-  /* Fonts */
-  --primary-font: "Roboto", sans-serif;
-  /* Colors */
+
   --primary-brand-color: #4d5ae5;
   --pressed-state-color: #404bbf;
   --dark-color: #2e2f42;
