@@ -777,6 +777,12 @@ header .container {
   padding: 96px 0;
 }
 
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  gap: 72px;
+}
+
 .footer .link.logo {
   color: var(--iris);
   font-family: "Raleway", sans-serif;
@@ -807,14 +813,13 @@ header .container {
 }
 
 @media screen and (min-width: 768px) {
-  .container-footer {
-    max-width: 584px;
-    align-items: baseline;
-    justify-content: flex-start;
+  .footer-container {
+    flex-direction: row;
+    flex-wrap: wrap;
     gap: 72px 24px;
   }
 
-  .container-footer {
+  .logo-container {
     display: block;
   }
 }
@@ -948,31 +953,17 @@ header .container {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1158px) {
   .footer {
-    padding: 102px 0;
+    padding: 100px 0;
   }
 
-  .footer .container {
-    width: 100%;
-    padding: 0 16px;
+  .footer-container {
+    align-items: baseline;
   }
 
-  .container-socials {
-    align-items: flex-start;
-    margin: 0 76px 0 0;
-  }
-
-  .footer .container-footer {
-    margin: 0 120px 0 0;
-  }
-
-  .subscribe-section {
-    width: auto;
-  }
-
-  .subscribe-form {
-    width: auto;
+  .logo-container {
+    margin-right: 120px;
   }
 }
 
