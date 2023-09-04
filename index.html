@@ -615,33 +615,40 @@
     </div>
 
     <!--mobile menu-->
+    <!-- Mobile Menu -->
     <div class="menu-container js-menu-container" id="mobile-menu">
-      <button type="button" class="menu-toggle js-close-menu">
-        <svg class="mobile-btn modal-btn" width="8" height="8">
-          <use href="./images/icons.svg#icon-close"></use>
-        </svg>
-      </button>
-      <ul class="mobile-menu nav">
-        <li class="mobile-menu-item">
-          <a href="./index.html" class="link current">Studio</a>
-        </li>
-        <li class="mobile-menu-item">
-          <a href="./portfolio.html" class="link">Portfolio</a>
-        </li>
-        <li class="mobile-menu-item">
-          <a href="./contacts.html" class="link">Contacts</a>
-        </li>
-      </ul>
+      <div class="mobile-menu-wrapper">
+        <button class="menu-toggle js-close-menu">
+          <svg class="menu-toggle-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-close-black"></use>
+          </svg>
+        </button>
+
+        <ul class="mobile-menu list">
+          <li class="mobile-menu-item">
+            <a class="mobile-menu-link current link" href="./index.html"
+              >Studio</a
+            >
+          </li>
+          <li class="mobile-menu-item">
+            <a class="mobile-menu-link link" href="./portfolio.html"
+              >Portfolio</a
+            >
+          </li>
+          <li class="mobile-menu-item">
+            <a class="mobile-menu-link link" href="">Contacts</a>
+          </li>
+        </ul>
 
         <ul class="mobile-address-list list">
           <li class="mobile-address-item">
-            <a class="link tel" href="tel:+110001111111">
+            <a class="mobile-address-link phone link" href="tel:+110001111111">
               +11 (000) 111-11-11
             </a>
           </li>
           <li class="mobile-address-item">
             <a
-              class="link email"
+              class="mobile-address-link email link"
               href="mailto:info@devstudio.com"
             >
               info@devstudio.com
@@ -649,37 +656,38 @@
           </li>
         </ul>
 
-        <ul class="list mobile-socials">
-          <li class="team-socials-logo">
-            <a class="link" href="https://www.instagram.com/" target="_blank">
-              <svg class="social-logo" width="24" height="24">
+        <ul class="mobile-list-socials list">
+          <li class="mobile-list-socials-item">
+            <a class="mobile-list-socials-link link" href="">
+              <svg class="mobile-socials-icon" width="24" height="24">
                 <use href="./images/icons.svg#icon-instagram"></use>
               </svg>
             </a>
           </li>
-          <li class="team-socials-logo">
-            <a class="link" href="https://twitter.com/" target="_blank">
-              <svg class="social-logo" width="24" height="24">
+          <li class="mobile-list-socials-item">
+            <a class="mobile-list-socials-link link" href="">
+              <svg class="mobile-socials-icon" width="24" height="24">
                 <use href="./images/icons.svg#icon-twitter"></use>
               </svg>
             </a>
           </li>
-          <li class="team-socials-logo">
-            <a class="link" href="https://www.facebook.com/" target="_blank">
-              <svg class="social-logo" width="24" height="24">
+          <li class="mobile-list-socials-item">
+            <a class="mobile-list-socials-link link" href="">
+              <svg class="mobile-socials-icon" width="24" height="24">
                 <use href="./images/icons.svg#icon-facebook"></use>
               </svg>
             </a>
           </li>
-          <li class="team-socials-logo">
-            <a class="link" href="https://www.linkedin.com/" target="_blank">
-              <svg class="social-logo" width="24" height="24">
+          <li class="mobile-list-socials-item">
+            <a class="mobile-list-socials-link link" href="">
+              <svg class="mobile-socials-icon" width="24" height="24">
                 <use href="./images/icons.svg#icon-linkedin"></use>
               </svg>
             </a>
           </li>
         </ul>
       </div>
+    </div>
   
 
     <!-- Scripts -->
